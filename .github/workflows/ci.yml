@@ -14,5 +14,5 @@ jobs:
 
     - uses: actions/upload-artifact@v1
       with:
-        name: Upload built HTML docs
+        name: ethdebug-format-html
         path: docs/build/html/
