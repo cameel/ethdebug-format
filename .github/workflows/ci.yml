@@ -7,6 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+
     - uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "docs/"
+
+    - uses: actions/upload-artifact@v1
+      with:
+        name: Upload built HTML docs
+        path: docs/build/html/
